@@ -33,7 +33,7 @@ Shopify.Context.initialize({
   API_SECRET_KEY: process.env.SHOPIFY_API_SECRET,
   SCOPES: ['write_products', 'read_products'],
   HOST_NAME: process.env.SHOPIFY_HOST,
-  API_VERSION: Shopify.Context.API_VERSION,
+  API_VERSION: '2023-01', // Adjust to the latest supported version
   IS_EMBEDDED_APP: true,
   SESSION_STORAGE: new Shopify.Session.MemorySessionStorage(),
 });
